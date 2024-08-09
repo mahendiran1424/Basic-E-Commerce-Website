@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra Collections</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- use poppions font -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet" />
+    <!-- use font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css"
+        integrity="sha512-8BU3emz11z9iF75b10oPjjpamM4Mz23yQFQymbtwyPN3mNWHxpgeqyrYnkIUP6A8KyAj5k2p3MiYLtYqew7gIw=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="nav-bar">
+        <h1>Nostra</h1>
+
+        <div class="nav-items">
+            <p class="nav-links"><a href="./index.html">Home</a></p>
+            <p class="nav-links"><a href="./collection.html">Collections</a></p>
+            <p class="nav-links"><a href="#contact">Contact</a></p>
+        </div>
+        <div class="toggle-bar">
+            <i class="fa-solid fa-bars" onclick="sideopen()"></i>
+        </div>
+    </nav>
+    <!-- sidenav-bar -->
+    <div class="side-nav-bar">
+        <p class="xmar-icon">
+            <i class="fa-solid fa-xmark" onclick="sideclose()"></i>
+        </p>
+
+        <div class="side-nav-items">
+            <p class="side-nav-links"><a href="./index.html">Home</a></p>
+            <p class="side-nav-links"><a href="./collection.html">Collections</a></p>
+            <p class="side-nav-links"><a href="#contact">Contact</a></p>
+        </div>
+    </div>
+    <!-- search bar -->
+    <div class="search-bar">
+        <form class="search">
+            <input type="text" id="input-bar" placeholder="Search" onkeyup="update(event)">
+        </form>
+    </div>
+    <!-- collections -->
+    <div class="collections">
+        <div class="images">
+            <img src="./fashion/download.jpeg" alt="cimag-1" width="200px" height="200px">
+            <p>one</p>
+        </div>
+        <div class="images">
+            <img src="./fashion/download.jpeg" alt="cimag-1" width="200px" height="200px">
+            <p>two</p>
+        </div>
+        <div class="images">
+            <img src="./fashion/download.jpeg" alt="cimag-1" width="200px" height="200px">
+            <p>three</p>
+        </div>
+        <div class="images">
+            <img src="./fashion/download.jpeg" alt="cimag-1" width="200px" height="200px">
+            <p>four</p>
+        </div>
+        <div class="images">
+            <img src="./fashion/download.jpeg" alt="cimag-1" width="200px" height="200px">
+            <p>five</p>
+        </div>
+        <div class="images">
+            <img src="./fashion/download.jpeg" alt="cimag-1" width="200px" height="200px">
+            <p>six</p>
+        </div>
+        <div class="images">
+            <img src="./fashion/download.jpeg" alt="cimag-1" width="200px" height="200px">
+            <p>seven</p>
+        </div>
+        <div class="images">
+            <img src="./fashion/download.jpeg" alt="cimag-1" width="200px" height="200px">
+            <p>eight</p>
+        </div>
+    </div>
+    <!-- contact -->
+    <div class="main" id="contact">
+        <div class="contact">
+            <form action="">
+                <h2>contact us</h2>
+                <p>name</p>
+                <input type="text" name="name">
+                <p>email</p>
+                <input type="email" name="email">
+                <p>message</p>
+                <textarea name="feedback" id="feedback"></textarea><br>
+                <button type="submit">submit</button>
+                <button type="reset">reset</button>
+            </form>
+        </div>
+    </div>
+    <!-- link js file -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
