@@ -1,0 +1,231 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+}
+.nav-bar {
+  background-color: aliceblue;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.nav-items {
+  display: flex;
+  column-gap: 20px;
+}
+.nav-items a {
+  text-decoration: none;
+  color: rgb(174, 174, 239);
+}
+.nav-items a:hover {
+  text-decoration: underline;
+}
+.toggle-bar {
+  display: none;
+}
+.toggle-bar i {
+  cursor: pointer;
+}
+
+/* side-nav-bar */
+.side-nav-bar {
+  background-color: black;
+  width: 50%;
+  top: 0%;
+  left: -60%;
+  height: 100%;
+  position: fixed;
+  transition: 1s;
+  color: white;
+  padding: 15px;
+}
+.xmar-icon {
+  text-align: right;
+}
+.xmar-icon i {
+  cursor: pointer;
+}
+
+.side-nav-links {
+  margin-bottom: 30px;
+}
+.side-nav-items a {
+  color: white;
+  text-decoration: none;
+}
+.side-nav-items a:hover {
+  text-decoration: underline;
+}
+/* head section */
+.home-section {
+  background-color: darkgray;
+}
+.home {
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  padding: 50px;
+  text-transform: capitalize;
+}
+.shop-now {
+  padding: 10px 20px 10px 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  margin-top: 15px;
+}
+/* service section */
+.service-section {
+  background-color: beige;
+}
+.service-container-1,
+.service-container-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  gap: 50px;
+  text-transform: capitalize;
+  border: none;
+}
+
+.service-container-2 div {
+  border: solid black 1px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: aliceblue;
+}
+/* new arrival section */
+.products {
+  background-color: aliceblue;
+  height: 700px;
+}
+.new-arrival {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.new-arrival-container {
+  position: relative;
+}
+.new-arrival-container button {
+  padding: 10px 20px 10px 20px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 50%;
+  left: 13%;
+  border-radius: 20px;
+  border: none;
+}
+.title {
+  text-align: center;
+  padding: 30px;
+}
+/*  subscriber section */
+.subscribe-section {
+  text-transform: capitalize;
+  text-align: center;
+  padding: 30px;
+}
+.subscribe-section input {
+  width: 60vw;
+  padding: 5px;
+  border: solid 2px black;
+}
+.subscribe-section button {
+  padding: 10px 20px 10px 20px;
+  background-color: black;
+  color: white;
+  margin-top: 30px;
+  border-radius: 30px;
+  text-transform: capitalize;
+}
+/* footer section */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 30px;
+  text-transform: capitalize;
+  line-height: 35px;
+}
+/* search section */
+.search-bar {
+  padding: 30px;
+  text-align: center;
+}
+#input-bar {
+  width: 60vw;
+  padding: 5px;
+  border-radius: 10px;
+  border: transparent;
+  background-color: aliceblue;
+}
+#input-bar:focus {
+  outline: none;
+}
+#input-bar::placeholder {
+  font-family: "Poppins";
+}
+/* collections */
+.collections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.images {
+  flex-grow: 1;
+  flex-basis: 25%;
+  text-align: center;
+  text-transform: capitalize;
+}
+.images img {
+  border-radius: 20px;
+}
+/* contact */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-color: aliceblue;
+  margin-top: 50px;
+}
+.contact {
+  background-color: black;
+  color: white;
+  padding: 30px;
+  width: 300px;
+  text-transform: capitalize;
+  height: 300px;
+  justify-content: center;
+}
+.contact button {
+  padding: 5px 10px 5px 10px;
+}
+/* media query */
+@media screen and (max-width: 769px) {
+  .toggle-bar {
+    display: block;
+  }
+  .nav-items {
+    display: none;
+  }
+  .home-img {
+    display: none;
+  }
+  .service-container-1 {
+    display: none;
+  }
+  .service-container-2 {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
